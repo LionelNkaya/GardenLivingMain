@@ -112,8 +112,10 @@ h1, h2, h3 {
     height: 100vh;
     min-height: 600px;
     background-image: url('https://images.unsplash.com/photo-1514415008039-efa173293080?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'); /* Placeholder for senior image */
-    background-size: cover;
-    background-position: center;
+ background-size: cover;
+    /* Keeps the center of the image visible on desktop */
+    background-position: center; 
+    background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -431,8 +433,20 @@ footer {
         display: block;
     }
 
+    .hero {
+        /* Shift the focal point up so faces aren't cut off on narrow screens */
+        background-position: center 20%; 
+        
+        /* Optional: Swap to a completely different, vertically-cropped image for mobile */
+        /* background-image: url('images/hero-mobile.jpg'); */
+    }
+
     .hero h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+        .hero-content {
+        padding-top: 50px; /* Adjust spacing for mobile */
     }
     
     .gallery-grid {
