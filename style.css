@@ -111,7 +111,6 @@ h1, h2, h3 {
 .hero {
     height: 100vh;
     min-height: 600px;
-    /*background-image: url('https://images.unsplash.com/photo-1514415008039-efa173293080?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'); /* Placeholder for senior image */
     background-image: url('https://images.unsplash.com/photo-1575267685970-7fbabf6ed7b0?q=80&w=790&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'); /* Placeholder for senior image */
     background-size: cover;
     background-position: center;
@@ -228,6 +227,30 @@ h1, h2, h3 {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.helene-mission {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 80px;
+    border-top: 1px solid #E8E1D8;
+}
+
+.helene-mission-image img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.helene-mission-text p {
+    margin-bottom: 20px;
+    color: var(--text-light);
 }
 
 /* --- Services Section --- */
@@ -406,8 +429,15 @@ footer {
     .hero h2 {
         font-size: 2.5rem;
     }
-    .about-content, .footer-content {
+    .about-content, .helene-mission, .footer-content {
         grid-template-columns: 1fr;
+    }
+
+    .helene-mission-image img {
+        max-width: 520px;
+        max-height: 420px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
