@@ -111,7 +111,8 @@ h1, h2, h3 {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background-image: url('https://images.unsplash.com/photo-1514415008039-efa173293080?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'); /* Placeholder for senior image */
+    /*background-image: url('https://images.unsplash.com/photo-1514415008039-efa173293080?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'); /* Placeholder for senior image */
+    background-image: url('https://images.unsplash.com/photo-1575267685970-7fbabf6ed7b0?q=80&w=790&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'); /* Placeholder for senior image */
     background-size: cover;
     background-position: center;
     position: relative;
